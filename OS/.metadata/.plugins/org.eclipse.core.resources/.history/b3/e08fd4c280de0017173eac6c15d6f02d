@@ -1,0 +1,27 @@
+import java.util.concurrent.Semaphore;
+
+public class Semaphor_Baker
+{
+	private static Semaphore semaphor = new Semaphore(3, true);
+	private static Thread Baker1;
+	private static Thread Baker2;
+	private static Thread Consumer;
+	
+	public static void main(String[] args)
+	{
+		Baker1 = new Thread()
+		{
+			 @Override
+			 public void run()
+			 {
+				 
+				 
+				 
+			 }
+			
+			
+		};
+
+	}
+
+}

@@ -1,0 +1,11 @@
+public class Semaphor_Baker
+{
+	private static Semaphor semaphor = new Semaphor(3, true);
+	
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

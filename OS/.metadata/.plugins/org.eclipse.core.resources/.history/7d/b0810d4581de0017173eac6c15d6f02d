@@ -1,0 +1,67 @@
+import java.util.concurrent.Semaphore;
+
+public class Semaphor_Baker
+{
+	private static Semaphore semaphor = new Semaphore(3, true);
+	
+	private static Thread Baker1;
+	private static Thread Baker2;
+	private static Thread Consumer;
+	
+	private Queue <Kuchen> auslage = new LinkedList<Kuchen>();
+	
+	public static void main(String[] args)
+	{
+		Baker1 = new Thread()
+		{
+			 @Override
+			 public void run()
+			 {
+				while(true)
+				{
+					semaphor.acquire();
+					
+				}								 
+			 }
+			 
+			 private void bake()
+			 {
+				 
+			 }
+		};
+		
+		Baker2 = new Thread()
+		{
+			 @Override
+			 public void run()
+			 {
+				 while(true)
+				{
+						
+						
+				}		
+				 
+				 
+			 }
+			
+			
+		};
+		
+		Consumer = new Thread()
+		{
+			 @Override
+			 public void run()
+			 {
+				while(true)
+				{
+						
+						
+				}		
+			 }
+			
+			
+		};
+
+	}
+
+}
